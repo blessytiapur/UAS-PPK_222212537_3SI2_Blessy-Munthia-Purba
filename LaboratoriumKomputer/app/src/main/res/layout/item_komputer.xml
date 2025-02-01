@@ -1,0 +1,46 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- IP Address Komputer -->
+    <TextView
+        android:id="@+id/ipAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="IP Address"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/edit_komputer_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Ruang Komputer -->
+    <TextView
+        android:id="@+id/ruangKomputer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ruang Komputer"
+        android:textSize="14sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/edit_komputer_button"
+        app:layout_constraintTop_toBottomOf="@id/ipAddress"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Tombol Edit -->
+    <ImageView
+        android:id="@+id/edit_komputer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="Edit Komputer"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

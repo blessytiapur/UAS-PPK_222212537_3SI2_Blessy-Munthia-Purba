@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TambahKomputerActivity">
+
+    <EditText
+        android:id="@+id/ip_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="IP Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/ruang_komputer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ruang Komputer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ip_address"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/tanggal_beli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Beli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ruang_komputer"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/garansi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Garansi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tanggal_beli"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/pemeliharaan_terakhir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pemeliharaan Terakhir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garansi"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/kondisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Kondisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pemeliharaan_terakhir"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kondisi"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
